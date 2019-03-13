@@ -51,17 +51,34 @@
 <img src="assets/images/cocktail-3-900.jpg" class="bg">
 
 
-<script src="Page on connect.facebook(dot)net"></script>
-<fb:login-button autologoutlink="true" onlogin="OnRequestPermission();">
-</fb:login-button>
-<script language="javascript" type="text/javascript">
-    FB.init({
-        appId: 'Your_Application_ID',
-        status: true, 
-        cookie: true, 
-        xfbml: true 
-    });
-    </script> 
+ 
+ <div id="fb-like-div">test</div>
+ 
+<script type="text/javascript">
+ 
+$(function(){
+ 
+ var url = 'https://xmambo.github.io/USBG/events.html';
+ var apiUrl = 'https://graph.facebook.com/?ids='+url;
+ 
+ $.ajax({url: apiUrl, success: function(result){
+ 
+        $.each( result, function( key, val ) {
+ 
+        	console.log(key + ' - ' + val['share']['share_count']);
+ 
+        	var shareCount = val['share']['share_count'];
+        	
+        	$("#fb-like-div").html(shareCount);
+ 
+   });
+ 
+    }});
+ 
+});
+ 
+</script>
+  
 </body>
 
 </html>
