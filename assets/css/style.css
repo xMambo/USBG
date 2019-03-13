@@ -1,0 +1,42 @@
+li {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 100;
+    font-size: 1.5em;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+}
+
+.bg {
+    width: 100%;
+}
+
+.navbar {
+background-color: transparent;
+}
+
+.image { 
+    position: relative; 
+    width: 100%; /* for IE 6 */
+ }
+ 
+ header {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+  }
+
+  h2 {
+    text-transform: uppercase;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 100;
+    letter-spacing: 0.3em;
+    margin: 0;
+    font-size: 2.5rem;
+    white-space: nowrap;
+  }
+
+
