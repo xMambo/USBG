@@ -7,8 +7,16 @@ li {
     
 }
 
+body {
+background-color: rgb(228, 228, 228);
+}
+
 .bg {
     width: 100%;
+}
+
+.darkfilter {
+filter: brightness(50%);
 }
 
 .navbar {
@@ -19,7 +27,21 @@ background-color: transparent;
     position: relative; 
     width: 100%; /* for IE 6 */
  }
- 
+ .float {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+ }
+
+  .caption {
+    color: rgb(212, 212, 212);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 100;
+ }
+
  header {
     position: absolute;
     top: 40%;
@@ -39,4 +61,19 @@ background-color: transparent;
     white-space: nowrap;
   }
 
+  /* Upcoming Events Home Page Section */
+  
+  .section {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  .jumbotron {
+    background-image: url(../images/event-makers-wax.jpg);
+    background-size: cover;
+  }
+
+  .center {
+    text-align: center;
+  }
 
